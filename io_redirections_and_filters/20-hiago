@@ -1,2 +1,2 @@
 #!/bin/bash
-tr --delete 'C/c'
+sudo tr --delete 'C/c'
