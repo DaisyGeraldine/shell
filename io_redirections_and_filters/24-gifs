@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lRa -1 | find . -type f -iname '*.gif' | sort -s -t $'\n' -k 1.8,1.11 | uniq -u | rev | cut -d / -f 1 | rev | tr -d ": .gif$"
+ls -lRa -1 | find . -type f -iname '*.gif' | sort -s -t $'\n' -k 1.8,1.11 | uniq -u | rev | cut -d / -f 1 | rev
