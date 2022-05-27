@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -ne {a..z}{a..z}'\n' | tr -d ' '
+echo -ne {a..z}{a..z}'\n' | tr -d ' ' | grep -v 'oo'
