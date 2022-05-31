@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#This script displays the content of the current directory, in list where displayed the name.
+
+
+for list in $(find . | cut -d "-" -f2-)
+do
+    echo $list
+ done
+    
