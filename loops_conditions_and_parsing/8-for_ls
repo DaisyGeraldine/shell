@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
 #This script displays the content of the current directory, in list where displayed the name.
-for list in $(ls -A)
-do
-    echo "$list" | cut -d "-" -f2-
-done
+for list in *; do echo "$list" | cut -d "-" -f2-; done
     
