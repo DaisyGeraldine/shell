@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#This script creates a file and displays "To infinity and beyond" indefinitely, then if when receiving a SIGTERM signal display "I hate the kill command" ...
+echo "$$" > /var/run/myscript.pid
+function sign_sigterm()
+{
+    rm /var/run/myscript.pid
+}
+
+trap "echo I hate the kill command; exit" SIGTERM
+trap "echo Y U no love me?!" SIGINT
+
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
